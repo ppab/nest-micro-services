@@ -9,4 +9,8 @@ export class UsersService {
   async create(createUserDto: CreateUserDto) {
     return this.usersRepository.create(createUserDto);
   }
+
+  async validateUser(username: string, password: string) {
+    return;
+  }
 }
